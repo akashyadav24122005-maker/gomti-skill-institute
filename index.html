@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gomti Skill Institute | Job-ready tech and business training</title>
+  <meta name="description" content="Gomti Skill Institute offers hands-on evening and weekend courses in web development, data analysis, digital marketing and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Gomti Skill Institute, home">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span>Gomti Skill Institute</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Learn a skill after work. Use it at work by spring.</h1>
+          <p class="lead">Small batches, working mentors and a project in every course. Classes run on weekday evenings and weekends in Hazratganj, Lucknow.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#courses">See courses</a>
+            <a class="btn btn-ghost" href="#contact">Book a free demo class</a>
+          </div>
+          <dl class="facts">
+            <div><dt>Batch size</dt><dd>18 students</dd></div>
+            <div><dt>Placement help</dt><dd>Resume and mock interviews</dd></div>
+            <div><dt>Since</dt><dd>2014</dd></div>
+          </dl>
+        </div>
+
+        <aside class="timetable" aria-labelledby="tt-title">
+          <h2 id="tt-title">This week's open batches</h2>
+          <table>
+            <thead>
+              <tr><th scope="col">Time</th><th scope="col">Mon–Fri</th><th scope="col">Sat</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">7:00 am</th><td>Excel for Work</td><td class="open">Seats open</td></tr>
+              <tr><th scope="row">6:30 pm</th><td class="hl">Web Development</td><td>Data Analysis</td></tr>
+              <tr><th scope="row">8:00 pm</th><td>Digital Marketing</td><td class="open">Seats open</td></tr>
+            </tbody>
+          </table>
+          <p class="tt-note">Next batches start Monday, 1 December.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="courses-title">Courses</h2>
+          <p>Every course ends with a project you can show to an employer.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter courses">
+          <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="tech" aria-pressed="false">Tech</button>
+          <button type="button" class="chip" data-filter="business" aria-pressed="false">Business</button>
+        </div>
+
+        <ul class="course-grid" id="courseGrid">
+          <li class="course" data-category="tech">
+            <article>
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript and Git. You build and publish three real sites.</p>
+              <ul class="meta"><li>12 weeks</li><li>Evenings</li><li>₹14,500</li></ul>
+            </article>
+          </li>
+          <li class="course" data-category="tech">
+            <article>
+              <h3>Data Analysis with Python</h3>
+              <p>Clean messy data, find patterns and present results with pandas and charts.</p>
+              <ul class="meta"><li>10 weeks</li><li>Weekends</li><li>₹16,000</li></ul>
+            </article>
+          </li>
+          <li class="course" data-category="business">
+            <article>
+              <h3>Digital Marketing</h3>
+              <p>Run search and social campaigns on a small budget and read the results.</p>
+              <ul class="meta"><li>8 weeks</li><li>Evenings</li><li>₹11,000</li></ul>
+            </article>
+          </li>
+          <li class="course" data-category="business">
+            <article>
+              <h3>Excel for Work</h3>
+              <p>Formulas, pivot tables and dashboards for accounts, sales and operations teams.</p>
+              <ul class="meta"><li>6 weeks</li><li>Mornings</li><li>₹6,500</li></ul>
+            </article>
+          </li>
+          <li class="course" data-category="tech">
+            <article>
+              <h3>UI/UX Design Basics</h3>
+              <p>Sketch, prototype and test app screens with real users before any code is written.</p>
+              <ul class="meta"><li>8 weeks</li><li>Weekends</li><li>₹12,000</li></ul>
+            </article>
+          </li>
+          <li class="course" data-category="business">
+            <article>
+              <h3>Spoken English for Interviews</h3>
+              <p>Speak clearly, answer common questions and practise with recorded mock interviews.</p>
+              <ul class="meta"><li>6 weeks</li><li>Evenings</li><li>₹5,500</li></ul>
+            </article>
+          </li>
+        </ul>
+        <p class="empty" id="emptyMsg" hidden>No courses match this filter.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 id="contact-title">Contact us</h2>
+          <p>Tell us what you want to learn. We reply within one working day.</p>
+          <address>
+            <p><strong>Visit</strong><br>2nd Floor, Mahatma Gandhi Marg,<br>Hazratganj, Lucknow 226001</p>
+            <p><strong>Call</strong><br><a href="tel:+910000000000">+91 00000 00000</a></p>
+            <p><strong>Email</strong><br><a href="mailto:hello@gomtiskill.example">hello@gomtiskill.example</a></p>
+            <p><strong>Office hours</strong><br>Mon–Sat, 9:00 am to 8:30 pm</p>
+          </address>
+        </div>
+
+        <form class="form" id="contactForm" novalidate aria-labelledby="form-title">
+          <h3 id="form-title">Send an enquiry</h3>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile number</label>
+            <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel-national" placeholder="10 digits" aria-describedby="phone-error" required>
+            <p class="error" id="phone-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="course">Course you are interested in</label>
+            <select id="course" name="course" aria-describedby="course-error" required>
+              <option value="">Choose a course</option>
+              <option>Web Development</option>
+              <option>Data Analysis with Python</option>
+              <option>Digital Marketing</option>
+              <option>Excel for Work</option>
+              <option>UI/UX Design Basics</option>
+              <option>Spoken English for Interviews</option>
+            </select>
+            <p class="error" id="course-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message <span class="hint">(10 characters minimum)</span></label>
+            <textarea id="message" name="message" rows="4" aria-describedby="message-error" required></textarea>
+            <p class="error" id="message-error" role="alert"></p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send enquiry</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Gomti Skill Institute. A fictional institute created for a web development exercise.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
