@@ -3,7 +3,6 @@
 This is my website for a made-up training institute in Lucknow. It has three sections on one page: Home, Courses and Contact. The institute, its courses, fees, address and phone number are all invented for this exercise.
 
 **Live site:** https://gomti-skill-institute.netlify.app
-**Code:** https://github.com/akashyadav24122005-maker/gomti-skill-institute
 
 ## How to run it
 
